@@ -5,8 +5,7 @@ import Typography from "material-ui/Typography";
 
 const styles = {
   root: {
-    flexGrow: 1,
-    margin: 50
+    flexGrow: 1
   }
 };
 
@@ -32,9 +31,12 @@ class App extends Component {
       <div className={classes.root}>
         <h1></h1>
         <Typography variant="display3">
-          До нового компа: { progress } %
+          До нового компа
         </Typography>
         <LinearProgress variant="determinate" value={progress} />
+        <Typography variant="display3">
+         { progress.toFixed(7) } %
+        </Typography>
       </div>
     );
   }
