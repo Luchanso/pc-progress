@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { withStyles } from "material-ui/styles";
 import { LinearProgress } from "material-ui/Progress";
 import Typography from "material-ui/Typography";
+import CssBaseline from 'material-ui/CssBaseline';
 
 const styles = {
   root: {
@@ -29,7 +30,7 @@ class App extends Component {
 
     return (
       <div className={classes.root}>
-        <h1></h1>
+        <CssBaseline />
         <Typography variant="display3">
           До нового компа
         </Typography>
